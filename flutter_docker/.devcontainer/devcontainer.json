@@ -1,0 +1,12 @@
+{
+    "name": "flutter_docker", //can i just change this
+    "context": "..",
+    "dockerFile": "../Dockerfile",
+    "remoteUser": "developer",
+    "mounts": ["source=/dev/bus/usb,target=/dev/bus/usb,type=bind"],
+    "settings": {"terminal.integrated.shell.linux": null},
+    "runArgs": ["--privileged"],
+    "extensions": ["dart-code.flutter", "dart-code.dart-code"],
+    "workspaceMount": "source=${localWorkspaceFolder}/workspace,target=/home/developer/workspace,type=bind,consistency=delegated",
+    "workspaceFolder": "/home/developer/workspace"
+  }
