@@ -1,5 +1,5 @@
 # Docker ReadMe
- This is the file containing all of the information on the necessray dependencies for working on this project, along with a short guide on how to actually get it up and running.
+ This is the file containing all of the information on the necessary dependencies for working on this project, along with a short guide on how to actually get it up and running.
 
 ## What I Have Downloaded
 What I have downloaded:
