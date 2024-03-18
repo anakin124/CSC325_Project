@@ -1,4 +1,5 @@
 # Development Container Environment Documentation
+## Introduction
  This is the file containing all of the information on the necessary dependencies for using the DevContainer to work on this project, along with a short guide on how to actually get it up and running.
 
  A development container is a collection of all of your dependencies, source code, and data so that any project can be run anywhere. Similarly to a VM, it is all self contained. However a devcontainer does not have a hypervisor and instead relies on the host machines OS. Not having to have the OS inside of it makes it extremely lightweight and portable. Anyone in the project is able to download what we have specified as the current working container, and to work on the project in a consistent environment. That way any code will run on anyones machine in the exact same way.
