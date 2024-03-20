@@ -24,7 +24,7 @@ jobs:
     - name: Flutter Build
       working-directory: ./src
       run: flutter build web 
-    #should it not be 
+    #should it not be the -d web-server type?
 
 
 
