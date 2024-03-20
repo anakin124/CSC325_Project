@@ -37,6 +37,7 @@
 - The extensions used are just so that you have all of the debugging tools and extensions to make developing much easier inside of the environment.
 
 ## How To Use The Container
+- This documentaion covers installing docker and using a devcontainer inside of VSCode: https://code.visualstudio.com/docs/devcontainers/containers 
 - First you need to install the necesary dependencies that were already listed. 
 - Now we need to use VSCode devcontainer to run this development container from the image that has been created.
 - In VSCode just press ctrl + shift + p, and type into the search bar “Dev Containers: Reopen in Container”
@@ -51,14 +52,14 @@
 - The first problem I ran into was not being able to update the Flutter package while inside of the container. To do this you have to change the permissions of the user, and I did this with a post create command in my devcontainer.json
 - I experienced a problem with using post create commands to update the flutter package.
 - For You To Know
-- Instead, once in the container, from the terminal you must run “flutter packages get” and “flutter packages upgrade”. Currently trying to add postcreate commands in the devontainer.json to fix this
+- Instead, once in the container, from the terminal you must run “flutter packages get” and “flutter packages upgrade”. Currently trying to add postcreate commands in the devcontainer.json to fix this
 - If you try to run the app not in web, you get an error that says cmake is required for linux flutter development. I am currently working on making the container Linux flutter development compatible.
 
 
 ## Summary
 - The main benefits of containerizing your development environment are that you will never face an issue of someone in the project saying "but it works on my machine". 
 - The other benefits, which will become more apparent later, are that you will not have to give new members a long list of necessary downloads and specific versions of those softwares, and then watch them spend multiple hours downloading said softwares in order for them to contribute to the project.
-- One thing I've realized from this process is jsut how easy it is to set up and use a devcontainer, especially if you are pulling your docker image from somewhere else and not creating it yourself.
+- One thing I've realized from this process is just how easy it is to set up and use a devcontainer, especially if you are pulling your docker image from somewhere else and not creating it yourself.
 
 
 ## Other Notes
