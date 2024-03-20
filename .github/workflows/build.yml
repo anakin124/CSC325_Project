@@ -15,14 +15,14 @@ jobs:
         channel: ‘stable’
 
     - name: install dependencies
-      working-directory: ./app
+      working-directory: ./src
       run: flutter pub get
     - name: Run Tests
-      working-directory: ./app
+      working-directory: ./src
       run: flutter test
 
     - name: Flutter Build
-      working-directory: ./app
+      working-directory: ./src
       run: flutter build web 
     #should it not be 
 
