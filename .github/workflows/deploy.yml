@@ -1,9 +1,14 @@
 name: CSC325 Flutter App Deploy
 
 on:
-  workflow_call:
+  push:
+    branches: 
+      - main
 
 jobs:
+  name: Deploy
+  needs: build
+  runs-on: ubuntu-jammy
   deploy:
     steps:
       - name: Deploy
