@@ -5,3 +5,4 @@
 - I had to mess around a lot with what things needed to have hyphens in front of them, but it seems like anything under steps has a hyphen.
 - I also had to ess around a lot with indentation, and the various examples I found online were all slightly different.
 - YAML is case sensitive. My first word was On, instead of on so I was getting an error.
+- When trying to get it into github actions I was having trouble with installing flutter. I switched from using the channel stable to using a specific flutter version instead and it solved it.
