@@ -10,7 +10,6 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    
     steps:
       - name: Deploy to gh-pages
         working-directory: ./.github/workflows
