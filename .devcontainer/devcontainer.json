@@ -29,7 +29,9 @@
 	"postCreateCommand": {
 		// I needed this post create command because any time I tried to do stuff inside of the container,
 		//such as updating flutters dependencies, it would not allow me to. This gives me permissions.
-		"flutterPermissions": "sudo chown -R vscode /flutter/.pub-cache/"
+		"flutterPermissions": "sudo chown -R vscode /flutter/.pub-cache/",
+		// Had to add in another as I was getting errors in build stage
+		"more flutterpermissions": "sudo chown -R vscode /flutter/bin/cache/flutter_version_check.stamp"
 		//this is my attempt to make a post create command that automatically updates flutter, so that
 		//the developer doesnt have to do it everytime
 		//"flutterupgrade": "cd src && flutter packages get && flutter packages upgrade"
