@@ -7,13 +7,15 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-jammy
+    runs-on: ubuntu-latest
     defaults: 
       run:
         working-directory: ./src
     steps:
-    - uses: actions/checkout@v4
-    - uses: subosito/flutter-action@v2
+    - name: Checkout Code
+      uses: actions/checkout@v4
+    - name: Install Flutter
+      uses: subosito/flutter-action@v2
       with:
         channel: ‘stable’
 
