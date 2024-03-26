@@ -29,16 +29,3 @@ jobs:
     - name: Flutter Build
       run: flutter build web 
 
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Deploy to gh-pages
-        working-directory: ./.github/workflows
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./src/build/web
-
